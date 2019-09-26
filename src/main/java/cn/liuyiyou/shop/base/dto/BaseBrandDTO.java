@@ -11,6 +11,8 @@ import java.io.Serializable;
 import java.time.Instant;
 import java.util.Optional;
 
+import static cn.liuyiyou.shop.config.Constants.OSS_URL;
+
 /**
  * 品牌定义表,这里会定义所有可供选择的品牌。\r\n该表会与类目表中的叶子类目关联,以缩小在商品上传时品牌的选择范围（选定商品的所属类目后,只能看到该类目关联的品牌）。\r\n该表还会与商品表关联,以标识商品的品牌。
  *
@@ -102,9 +104,9 @@ public class BaseBrandDTO implements Serializable {
         this.brandNameEn = baseBrand.getBrandNameEn();
         this.brandDescp = baseBrand.getBrandDescp();
         this.brandKeywords = baseBrand.getBrandKeywords();
-        this.brandIcon = baseBrand.getBrandIcon();
+        this.brandIcon = OSS_URL + baseBrand.getBrandIcon();
         this.countryId = baseBrand.getCountryId();
-        this.prodImg = baseBrand.getProdImg();
+        this.prodImg = OSS_URL + baseBrand.getProdImg();
         this.bannerImg = baseBrand.getBannerImg();
     }
 

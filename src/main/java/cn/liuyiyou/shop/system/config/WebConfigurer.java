@@ -131,20 +131,37 @@ public class WebConfigurer implements ServletContextInitializer, WebServerFactor
         cachingHttpHeadersFilter.setAsyncSupported(true);
     }
 
+    //这个不起作用，下面起作用，不需要前端跨域
+//    @Bean
+//    public CorsFilter corsFilter() {
+//        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+//        CorsConfiguration config = jHipsterProperties.getCors();
+//        if (config.getAllowedOrigins() != null && !config.getAllowedOrigins().isEmpty()) {
+//            log.info("Registering CORS filter");
+//            source.registerCorsConfiguration("/api/**", config);
+//            source.registerCorsConfiguration("/management/**", config);
+//            source.registerCorsConfiguration("/v2/api-docs", config);
+//            source.registerCorsConfiguration("/*/api/**", config);
+//            source.registerCorsConfiguration("/services/*/api/**", config);
+//            source.registerCorsConfiguration("/*/management/**", config);
+//        }
+//        return new CorsFilter(source);
+//    }
+
     @Bean
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        CorsConfiguration config = jHipsterProperties.getCors();
-        if (config.getAllowedOrigins() != null && !config.getAllowedOrigins().isEmpty()) {
-            log.debug("Registering CORS filter");
-            source.registerCorsConfiguration("/api/**", config);
-            source.registerCorsConfiguration("/management/**", config);
-            source.registerCorsConfiguration("/v2/api-docs", config);
-            source.registerCorsConfiguration("/*/api/**", config);
-            source.registerCorsConfiguration("/services/*/api/**", config);
-            source.registerCorsConfiguration("/*/management/**", config);
-        }
+        source.registerCorsConfiguration("/**", buildConfig()); // 4
         return new CorsFilter(source);
+    }
+
+
+    private CorsConfiguration buildConfig() {
+        CorsConfiguration corsConfiguration = new CorsConfiguration();
+        corsConfiguration.addAllowedOrigin("*"); // 1允许任何域名使用
+        corsConfiguration.addAllowedHeader("*"); // 2允许任何头
+        corsConfiguration.addAllowedMethod("*"); // 3允许任何方法（post、get等）
+        return corsConfiguration;
     }
 
 }
