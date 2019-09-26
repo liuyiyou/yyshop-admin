@@ -1,0 +1,558 @@
+{
+  "groups": [
+    {
+      "name": "jhipster",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties"
+    },
+    {
+      "name": "jhipster.async",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Async",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Async getAsync() "
+    },
+    {
+      "name": "jhipster.audit-events",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$AuditEvents",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.AuditEvents getAuditEvents() "
+    },
+    {
+      "name": "jhipster.cache",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Cache getCache() "
+    },
+    {
+      "name": "jhipster.cache.caffeine",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Caffeine",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Cache.Caffeine getCaffeine() "
+    },
+    {
+      "name": "jhipster.cache.ehcache",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Ehcache",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Cache.Ehcache getEhcache() "
+    },
+    {
+      "name": "jhipster.cache.hazelcast",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Hazelcast",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Cache.Hazelcast getHazelcast() "
+    },
+    {
+      "name": "jhipster.cache.hazelcast.management-center",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Hazelcast$ManagementCenter",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Hazelcast",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Cache.Hazelcast.ManagementCenter getManagementCenter() "
+    },
+    {
+      "name": "jhipster.cache.infinispan",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Cache.Infinispan getInfinispan() "
+    },
+    {
+      "name": "jhipster.cache.infinispan.distributed",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan$Distributed",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Cache.Infinispan.Distributed getDistributed() "
+    },
+    {
+      "name": "jhipster.cache.infinispan.local",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan$Local",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Cache.Infinispan.Local getLocal() "
+    },
+    {
+      "name": "jhipster.cache.infinispan.replicated",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan$Replicated",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Cache.Infinispan.Replicated getReplicated() "
+    },
+    {
+      "name": "jhipster.cache.memcached",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Memcached",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Cache.Memcached getMemcached() "
+    },
+    {
+      "name": "jhipster.cache.redis",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Redis",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Cache.Redis getRedis() "
+    },
+    {
+      "name": "jhipster.client-app",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$ClientApp",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.ClientApp getClientApp() "
+    },
+    {
+      "name": "jhipster.gateway",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Gateway",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Gateway getGateway() "
+    },
+    {
+      "name": "jhipster.gateway.rate-limiting",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Gateway$RateLimiting",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Gateway",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Gateway.RateLimiting getRateLimiting() "
+    },
+    {
+      "name": "jhipster.http",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Http",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Http getHttp() "
+    },
+    {
+      "name": "jhipster.http.cache",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Http$Cache",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Http",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Http.Cache getCache() "
+    },
+    {
+      "name": "jhipster.logging",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Logging",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Logging getLogging() "
+    },
+    {
+      "name": "jhipster.logging.logstash",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Logging$Logstash",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Logging",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Logging.Logstash getLogstash() "
+    },
+    {
+      "name": "jhipster.mail",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Mail",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Mail getMail() "
+    },
+    {
+      "name": "jhipster.metrics",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Metrics",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Metrics getMetrics() "
+    },
+    {
+      "name": "jhipster.metrics.logs",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Metrics$Logs",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Metrics",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Metrics.Logs getLogs() "
+    },
+    {
+      "name": "jhipster.registry",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Registry",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Registry getRegistry() "
+    },
+    {
+      "name": "jhipster.security",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Security getSecurity() "
+    },
+    {
+      "name": "jhipster.security.authentication",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security$Authentication",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Security.Authentication getAuthentication() "
+    },
+    {
+      "name": "jhipster.security.authentication.jwt",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security$Authentication$Jwt",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security$Authentication",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Security.Authentication.Jwt getJwt() "
+    },
+    {
+      "name": "jhipster.security.client-authorization",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security$ClientAuthorization",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Security.ClientAuthorization getClientAuthorization() "
+    },
+    {
+      "name": "jhipster.security.remember-me",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security$RememberMe",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Security.RememberMe getRememberMe() "
+    },
+    {
+      "name": "jhipster.social",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Social",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Social getSocial() "
+    },
+    {
+      "name": "jhipster.swagger",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Swagger",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties",
+      "sourceMethod": "public cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties.Swagger getSwagger() "
+    },
+    {
+      "name": "management.endpoint.jhimetrics",
+      "type": "cn.liuyiyou.shop.system.security.jhsipter.metric.JHipsterMetricsEndpoint",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.metric.JHipsterMetricsEndpoint"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jhipster.async.core-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Async"
+    },
+    {
+      "name": "jhipster.async.max-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Async"
+    },
+    {
+      "name": "jhipster.async.queue-capacity",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Async"
+    },
+    {
+      "name": "jhipster.audit-events.retention-period",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$AuditEvents"
+    },
+    {
+      "name": "jhipster.cache.caffeine.max-entries",
+      "type": "java.lang.Long",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Caffeine"
+    },
+    {
+      "name": "jhipster.cache.caffeine.time-to-live-seconds",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Caffeine"
+    },
+    {
+      "name": "jhipster.cache.ehcache.max-entries",
+      "type": "java.lang.Long",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Ehcache"
+    },
+    {
+      "name": "jhipster.cache.ehcache.time-to-live-seconds",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Ehcache"
+    },
+    {
+      "name": "jhipster.cache.hazelcast.backup-count",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Hazelcast"
+    },
+    {
+      "name": "jhipster.cache.hazelcast.management-center.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Hazelcast$ManagementCenter"
+    },
+    {
+      "name": "jhipster.cache.hazelcast.management-center.update-interval",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Hazelcast$ManagementCenter"
+    },
+    {
+      "name": "jhipster.cache.hazelcast.management-center.url",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Hazelcast$ManagementCenter"
+    },
+    {
+      "name": "jhipster.cache.hazelcast.time-to-live-seconds",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Hazelcast"
+    },
+    {
+      "name": "jhipster.cache.infinispan.config-file",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan"
+    },
+    {
+      "name": "jhipster.cache.infinispan.distributed.instance-count",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan$Distributed"
+    },
+    {
+      "name": "jhipster.cache.infinispan.distributed.max-entries",
+      "type": "java.lang.Long",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan$Distributed"
+    },
+    {
+      "name": "jhipster.cache.infinispan.distributed.time-to-live-seconds",
+      "type": "java.lang.Long",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan$Distributed"
+    },
+    {
+      "name": "jhipster.cache.infinispan.local.max-entries",
+      "type": "java.lang.Long",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan$Local"
+    },
+    {
+      "name": "jhipster.cache.infinispan.local.time-to-live-seconds",
+      "type": "java.lang.Long",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan$Local"
+    },
+    {
+      "name": "jhipster.cache.infinispan.replicated.max-entries",
+      "type": "java.lang.Long",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan$Replicated"
+    },
+    {
+      "name": "jhipster.cache.infinispan.replicated.time-to-live-seconds",
+      "type": "java.lang.Long",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan$Replicated"
+    },
+    {
+      "name": "jhipster.cache.infinispan.stats-enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Infinispan"
+    },
+    {
+      "name": "jhipster.cache.memcached.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Memcached"
+    },
+    {
+      "name": "jhipster.cache.memcached.expiration",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Memcached"
+    },
+    {
+      "name": "jhipster.cache.memcached.servers",
+      "type": "java.lang.String",
+      "description": "Comma or whitespace separated list of servers' addresses.",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Memcached"
+    },
+    {
+      "name": "jhipster.cache.memcached.use-binary-protocol",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Memcached"
+    },
+    {
+      "name": "jhipster.cache.redis.expiration",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Redis"
+    },
+    {
+      "name": "jhipster.cache.redis.server",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Cache$Redis"
+    },
+    {
+      "name": "jhipster.client-app.name",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$ClientApp"
+    },
+    {
+      "name": "jhipster.gateway.authorized-microservices-endpoints",
+      "type": "java.util.Map<java.lang.String,java.util.List<java.lang.String>>",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Gateway"
+    },
+    {
+      "name": "jhipster.gateway.rate-limiting.duration-in-seconds",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Gateway$RateLimiting"
+    },
+    {
+      "name": "jhipster.gateway.rate-limiting.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Gateway$RateLimiting"
+    },
+    {
+      "name": "jhipster.gateway.rate-limiting.limit",
+      "type": "java.lang.Long",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Gateway$RateLimiting"
+    },
+    {
+      "name": "jhipster.http.cache.time-to-live-in-days",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Http$Cache"
+    },
+    {
+      "name": "jhipster.logging.logstash.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Logging$Logstash"
+    },
+    {
+      "name": "jhipster.logging.logstash.host",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Logging$Logstash"
+    },
+    {
+      "name": "jhipster.logging.logstash.port",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Logging$Logstash"
+    },
+    {
+      "name": "jhipster.logging.logstash.queue-size",
+      "type": "java.lang.Integer",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Logging$Logstash"
+    },
+    {
+      "name": "jhipster.logging.use-json-format",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Logging"
+    },
+    {
+      "name": "jhipster.mail.base-url",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Mail"
+    },
+    {
+      "name": "jhipster.mail.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Mail"
+    },
+    {
+      "name": "jhipster.mail.from",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Mail"
+    },
+    {
+      "name": "jhipster.metrics.logs.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Metrics$Logs"
+    },
+    {
+      "name": "jhipster.metrics.logs.report-frequency",
+      "type": "java.lang.Long",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Metrics$Logs"
+    },
+    {
+      "name": "jhipster.registry.password",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Registry"
+    },
+    {
+      "name": "jhipster.security.authentication.jwt.base64-secret",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security$Authentication$Jwt"
+    },
+    {
+      "name": "jhipster.security.authentication.jwt.secret",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security$Authentication$Jwt"
+    },
+    {
+      "name": "jhipster.security.authentication.jwt.token-validity-in-seconds",
+      "type": "java.lang.Long",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security$Authentication$Jwt"
+    },
+    {
+      "name": "jhipster.security.authentication.jwt.token-validity-in-seconds-for-remember-me",
+      "type": "java.lang.Long",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security$Authentication$Jwt"
+    },
+    {
+      "name": "jhipster.security.client-authorization.access-token-uri",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security$ClientAuthorization"
+    },
+    {
+      "name": "jhipster.security.client-authorization.client-id",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security$ClientAuthorization"
+    },
+    {
+      "name": "jhipster.security.client-authorization.client-secret",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security$ClientAuthorization"
+    },
+    {
+      "name": "jhipster.security.client-authorization.token-service-id",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security$ClientAuthorization"
+    },
+    {
+      "name": "jhipster.security.remember-me.key",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Security$RememberMe"
+    },
+    {
+      "name": "jhipster.social.redirect-after-sign-in",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Social"
+    },
+    {
+      "name": "jhipster.swagger.contact-email",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Swagger"
+    },
+    {
+      "name": "jhipster.swagger.contact-name",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Swagger"
+    },
+    {
+      "name": "jhipster.swagger.contact-url",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Swagger"
+    },
+    {
+      "name": "jhipster.swagger.default-include-pattern",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Swagger"
+    },
+    {
+      "name": "jhipster.swagger.description",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Swagger"
+    },
+    {
+      "name": "jhipster.swagger.host",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Swagger"
+    },
+    {
+      "name": "jhipster.swagger.license",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Swagger"
+    },
+    {
+      "name": "jhipster.swagger.license-url",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Swagger"
+    },
+    {
+      "name": "jhipster.swagger.protocols",
+      "type": "java.lang.String[]",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Swagger"
+    },
+    {
+      "name": "jhipster.swagger.terms-of-service-url",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Swagger"
+    },
+    {
+      "name": "jhipster.swagger.title",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Swagger"
+    },
+    {
+      "name": "jhipster.swagger.use-default-response-messages",
+      "type": "java.lang.Boolean",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Swagger"
+    },
+    {
+      "name": "jhipster.swagger.version",
+      "type": "java.lang.String",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.JHipsterProperties$Swagger"
+    },
+    {
+      "name": "management.endpoint.jhimetrics.cache.time-to-live",
+      "type": "java.time.Duration",
+      "description": "Maximum time that a response can be cached.",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.metric.JHipsterMetricsEndpoint",
+      "defaultValue": "0ms"
+    },
+    {
+      "name": "management.endpoint.jhimetrics.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether to enable the jhimetrics endpoint.",
+      "sourceType": "cn.liuyiyou.shop.system.security.jhsipter.metric.JHipsterMetricsEndpoint",
+      "defaultValue": true
+    }
+  ],
+  "hints": []
+}
