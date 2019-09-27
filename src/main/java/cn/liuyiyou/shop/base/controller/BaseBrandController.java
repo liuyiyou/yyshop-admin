@@ -28,7 +28,7 @@ import javax.validation.Valid;
  *
  * @author liuyiyou 2019-09-26
  */
-@Api(value = "BaseBrandController",description = "品牌管理")
+@Api(value = "BaseBrandController", tags = "品牌管理")
 @RestController
 @RequestMapping("/api")
 public class BaseBrandController {
@@ -37,16 +37,16 @@ public class BaseBrandController {
     private BaseBrandService baseBrandService;
 
 
-    @ApiOperation(value = "根据ID获取#BaseBrand#", notes = "根据ID获取#BaseBrand#", response = BaseBrandDTO.class)
-    @GetMapping("/baseBrand/{id:.+}")
+    @ApiOperation(value = "根据ID获取#BaseBrand#", notes = "根据ID获取#BaseBrand#")
+    @GetMapping("/brand/{id:.+}")
     public ResultEntity<BaseBrandDTO> find(@PathVariable Long id) {
         return ResultEntity.wrapOrNotFound(baseBrandService.find(id).map(BaseBrandDTO::new));
 
     }
 
 
-    @PostMapping("/baseBrand")
-    @ApiOperation(value = "新建#BaseBrand#", notes = "新建#BaseBrand#", response = BaseBrandDTO.class)
+    @PostMapping("/brand")
+    @ApiOperation(value = "新建#BaseBrand#", notes = "新建#BaseBrand#")
     public ResultEntity<BaseBrandDTO> create(@Valid @RequestBody BaseBrandDTO baseBrandDTO) {
         if (baseBrandDTO.getBrandId() != null) {
             throw new BadRequestAlertException("A new BaseBrand cannot already have an ID", "BaseBrand", "idexists");
@@ -58,16 +58,16 @@ public class BaseBrandController {
     }
 
 
-    @PutMapping("/baseBrand")
-    @ApiOperation(value = "更新#BaseBrand#", notes = "更新#BaseBrand#", response = BaseBrandDTO.class)
+    @PutMapping("/brand")
+    @ApiOperation(value = "更新#BaseBrand#", notes = "更新#BaseBrand#")
     public ResultEntity<BaseBrandDTO> update(@Valid @RequestBody BaseBrandDTO baseBrandDTO) {
         BaseBrandDTO newBaseBrand = new BaseBrandDTO(baseBrandService.update(baseBrandDTO));
         return ResultEntity.ok(newBaseBrand);
     }
 
 
-    @PutMapping("/baseBrand/modify")
-    @ApiOperation(value = "更新#BaseBrand#部分字段，只更新对应DTO里的not null字段", notes = "更新#BaseBrand#部分字段,只更新对应DTO里的not null字段", response = BaseBrandDTO.class)
+    @PutMapping("/brand/modify")
+    @ApiOperation(value = "更新#BaseBrand#部分字段，只更新对应DTO里的not null字段", notes = "更新#BaseBrand#部分字段,只更新对应DTO里的not null字段")
     public ResultEntity<BaseBrandDTO> modify(@Valid @RequestBody BaseBrandDTO baseBrandDTO) {
         BaseBrandDTO newBaseBrand = new BaseBrandDTO(baseBrandService.modify(baseBrandDTO));
         return ResultEntity.ok(newBaseBrand);
@@ -75,7 +75,7 @@ public class BaseBrandController {
 
 
     @ApiOperation(value = "刪除#BaseBrand#", notes = "刪除#BaseBrand#")
-    @DeleteMapping("/baseBrand/{id:.+}")
+    @DeleteMapping("/brand/{id}")
     public ResultEntity<String> delete(@PathVariable Long id) {
         if (log.isDebugEnabled()) {
             log.debug("REST request to delete BaseBrand: {}", id);
@@ -85,21 +85,21 @@ public class BaseBrandController {
     }
 
 
-    @ApiOperation(value = "获取#BaseBrand#列表", notes = "获取#BaseBrand#列表", response = BaseBrandDTO.class)
+    @ApiOperation(value = "获取#BaseBrand#列表", notes = "获取#BaseBrand#列表")
     @GetMapping("/baseBrand/list")
     public ResultEntity<Page<BaseBrandDTO>> list(Pageable pageable) {
         return ResultEntity.ok(baseBrandService.list(pageable));
 
     }
 
-    @ApiOperation(value = "获取#BaseBrand#列表", notes = "获取#BaseBrand#列表", response = BaseBrandDTO.class)
+    @ApiOperation(value = "获取#BaseBrand#列表", notes = "获取#BaseBrand#列表")
     @PostMapping("/baseBrand/list")
     public ResultEntity<Page<BaseBrandDTO>> list(@RequestBody BaseBrandDTO baseBrandDTO, Pageable pageable) {
         return ResultEntity.ok(baseBrandService.list(pageable));
 
     }
 
-    @ApiOperation(value = "高级搜索", notes = "whereClause example: (id=1 or lastModifiedDate > 20190926) and createdBy=admin \n 前端需要调用encodeURIComponent(whereClause)进行编码", response = BaseBrandDTO.class)
+    @ApiOperation(value = "高级搜索", notes = "whereClause example: (id=1 or lastModifiedDate > 20190926) and createdBy=admin \n 前端需要调用encodeURIComponent(whereClause)进行编码")
     @GetMapping(value = "/baseBrand/adv/{whereClause}")
     public ResultEntity<Page<BaseBrandDTO>> advancedSearch(@PathVariable String whereClause, Pageable pageable) throws JSQLParserException {
         return ResultEntity.ok(baseBrandService.advancedSearch(whereClause, pageable));
