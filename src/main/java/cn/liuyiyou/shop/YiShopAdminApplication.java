@@ -1,5 +1,7 @@
 package cn.liuyiyou.shop;
 
+import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.boot.SpringApplication;
@@ -25,13 +27,9 @@ import java.util.List;
 @RestController
 @EnableSwagger2
 @Slf4j
+@EnableSwaggerBootstrapUI
 public class YiShopAdminApplication  implements InitializingBean {
 
-
-    @GetMapping("/")
-    public String home(){
-        return "success";
-    }
 
     public static void main(String[] args) {
         SpringApplication.run(YiShopAdminApplication.class, args);
@@ -45,27 +43,25 @@ public class YiShopAdminApplication  implements InitializingBean {
 
     @Bean
     public Docket createRestApi() {
-        ParameterBuilder ticketPar = new ParameterBuilder();
-        List<Parameter> pars = new ArrayList<>();
-        ticketPar.name("Authorization").description("Token")
-                .modelRef(new ModelRef("string")).parameterType("header")
-                .required(false).build(); //header中的Authorization参数非必填，传空也可以
-
-        pars.add(ticketPar.build());    //根据每个方法名也知道当前方法在设置什么参数
+//        ParameterBuilder ticketPar = new ParameterBuilder();
+//        List<Parameter> pars = new ArrayList<>();
+//        ticketPar.name("Authorization").description("Token")
+//                .modelRef(new ModelRef("string")).parameterType("header")
+//                .required(false).build(); //header中的Authorization参数非必填，传空也可以
+//        pars.add(ticketPar.build());    //根据每个方法名也知道当前方法在设置什么参数
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
                 .apis(RequestHandlerSelectors.withClassAnnotation(RestController.class))
                 .paths(PathSelectors.any())
-                .build().globalOperationParameters(pars)
-                ;
+                .build();//.globalOperationParameters(pars)
     }
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("供应链平台系统 后台接口文档")
-                .description("参数类型中带有optional表示该参数可为空，如果没有表示该参数必填")
-                .termsOfServiceUrl("http://localhost:10001/")
+                .title("YY MALL 后台接口文档")
+                .description("增强的swagger文档")
+                .termsOfServiceUrl("/")
                 .version("1.0")
                 .build();
     }

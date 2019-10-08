@@ -33,8 +33,8 @@ import java.util.Stack;
 
 /**
  * GenericSpecification
- *
- * @author Tony Luo 2019-09-25
+ * 高级查询 可以传入  id=1 and name = lyy or ( id = 2)
+ * @author liuyiyou.cn
  */
 public class GenericSpecification<T> implements Specification<T> {
     private final static Logger log = LoggerFactory.getLogger(GenericSpecification.class);

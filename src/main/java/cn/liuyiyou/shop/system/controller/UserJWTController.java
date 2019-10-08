@@ -6,6 +6,7 @@ import cn.liuyiyou.shop.system.security.jwt.TokenProvider;
 import cn.liuyiyou.shop.system.service.UserService;
 import cn.liuyiyou.shop.system.vm.LoginVM;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -23,9 +24,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.Map;
 
-/**
- * Controller to authenticate users.
- */
+@Api(value = "UserJWTController",tags = "注册与授权")
 @RestController
 @RequestMapping("/api")
 public class UserJWTController {

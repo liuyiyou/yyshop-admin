@@ -12,6 +12,7 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.cache.CacheManager;
 import java.util.OptionalLong;
 import java.util.concurrent.TimeUnit;
 
@@ -38,17 +39,17 @@ public class CacheConfiguration {
 
     @Bean
     public JCacheManagerCustomizer cacheManagerCustomizer() {
-        return cm -> {
-            createCache(cm, UserRepository.USERS_BY_LOGIN_CACHE);
-            createCache(cm, UserRepository.USERS_BY_EMAIL_CACHE);
-            createCache(cm, User.class.getName());
-            createCache(cm, Authority.class.getName());
-            createCache(cm, User.class.getName() + ".authorities");
+        return cacheManager -> {
+            createCache(cacheManager, UserRepository.USERS_BY_LOGIN_CACHE);
+            createCache(cacheManager, UserRepository.USERS_BY_EMAIL_CACHE);
+            createCache(cacheManager, User.class.getName());
+            createCache(cacheManager, Authority.class.getName());
+            createCache(cacheManager, User.class.getName() + ".authorities");
             // jhipster-needle-caffeine-add-entry
         };
     }
 
-    private void createCache(javax.cache.CacheManager cm, String cacheName) {
+    private void createCache(CacheManager cm, String cacheName) {
         javax.cache.Cache<Object, Object> cache = cm.getCache(cacheName);
         if (cache != null) {
             cm.destroyCache(cacheName);
