@@ -12,7 +12,7 @@ public final class Constants {
     public static final String DEFAULT_LANGUAGE = "zh-cn";
     public static final String ANONYMOUS_USER = "anonymoususer";
 
-    public static final String OSS_URL = "https://oss.yanglaoban.com/";
+    public static final String OSS_URL = "https://oss.liuyiyou.com/";
 
     private Constants() {
     }
